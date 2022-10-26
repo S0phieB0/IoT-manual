@@ -19,6 +19,9 @@ I looked at this website to find out how to do it: https://lastminuteengineers.c
 So you go to **Sketch > Inlcude Library > Manage Librarues**
 Search for '**ntpclient**' by Fabrice Weinberg and instal it.
 
+![Alt text](IoT-manual/libraryntpclient.jpg "ntpclient in library")
+
+
 ### 1.3 Add code
 Add the following code:
 
