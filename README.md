@@ -83,6 +83,8 @@ You need to fill in a few things before the code can work:
 Verify the sketch and upload it. Don't forget to check if you linked the right board and port.
 If everything worked you can now open your serial monitor (Button at the top right) and you can see the day of the week and the time.
 
+<img width="1158" alt="time" src="https://user-images.githubusercontent.com/90249238/198135115-837921ba-e78b-4e6a-a1d5-382c5b8e982e.png">
+
 ### 🚩 1.6 Mistake with the timezone 🚩
 The serial monitor said that it was one hour earlier than it actually was. I think it is because of daylight saving time. So instead of 'const long utcOffsetInSeconds = 3600;' it is 'const long utcOffsetInSeconds = 7200;' and then the time is correct.
 
