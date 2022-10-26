@@ -152,8 +152,9 @@ First you have to costumize the Google Calendar events:
   - You can also add a Search term, then Zapier will only trigger events with a certain name. If you don't use this, all the events from that caledar will trigger Zapier.
  - Click on '**Test and continue**'. If all goes well you will see that it all worked and you can continue to the next part.
 
-<img width="300" alt="zapstep2" src="https://user-images.githubusercontent.com/90249238/198130380-6eb93695-21f9-48d3-bdf2-99afb97227a4.png">
-<img width="300" alt="zapstep2value" src="https://user-images.githubusercontent.com/90249238/198130434-4558762d-03dd-4c8a-95aa-8eb18217280d.png">
+<img width="300" alt="zapstep2" src="https://user-images.githubusercontent.com/90249238/198130380-6eb93695-21f9-48d3-bdf2-99afb97227a4.png"> <img width="300" alt="zapstep2value" src="https://user-images.githubusercontent.com/90249238/198130434-4558762d-03dd-4c8a-95aa-8eb18217280d.png">
+
+
 The second part is connecting Zapier to Adafruit:
   - Under **Choose app** you have to select **ADafruit IO**
   - Under **Choose Action** Event select **Create Feed Data**
