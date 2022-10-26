@@ -139,7 +139,7 @@ I didn't have a Zappier account yet so I had to make one first. Just click on si
 
 <img width="500" alt="zaphome" src="https://user-images.githubusercontent.com/90249238/198130183-90b3beab-ea8e-4520-a1c1-147e0fa98838.png">
 - Go to http://zapier.com/
-- Click on '**Make a zap**'
+- Click on **Make a zap**
 
 <img width="300" alt="zapstep1" src="https://user-images.githubusercontent.com/90249238/198130247-15e80278-eb5d-453b-96c7-79bc74bfceff.png">
 <img width="300" alt="zapstep1trigger" src="https://user-images.githubusercontent.com/90249238/198130265-7c5fdd9d-c0d1-4590-b19d-f548350c3764.png">
@@ -160,8 +160,7 @@ The second part is connecting Zapier to Adafruit:
 - Under **Choose account** you have to log in with your Adafruit account.
 - Fill in the Feed you want to use
 - Under **Value** click on the add icon and select '**1. Event begins:**' ans '**1. Event Ends**'
-  _🚩 Select them in the right order enn don't select the 'pretty' versions otherwise it might not work.
-_
+  🚩 Select them in the right order enn don't select the 'pretty' versions otherwise it might not work.
 - Click '**Test & Continue**' and check in your Adafruit if the test came through.
 - Click '**Turn on the Zap**' (in the top right corner)
 
@@ -171,7 +170,7 @@ _
 ## Step 3: Arduino IDE code
 - Plug in your ESP8266 if you didn't already do that.
 - Go to https://github.com/SummerDanoe/ReadGoogleCalFeed and copy the code
-  - Don't forget to fill in your Adafruit username and key and your Wifi and padsword where it needs to be in the code.
+- Don't forget to fill in your Adafruit username and key and your Wifi and padsword where it needs to be in the code.
 
 ### 🚩 3.1 Error in the code 🚩
 When tried to verify the code it gave me an error: '**Compilation error: variable or field 'handleMessage' declared void**'
