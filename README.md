@@ -121,7 +121,7 @@ If (timeClient.getHours >= 22 && <=5)
  }
 
 
-## step 2 - Linking your google calendar to ESP8266
+## Step 2 - Linking your google calendar to ESP8266
 For my diffuser want to be able to link Google Calendar to it so that the diffuser goes on at the right time.
 
 ### 🔴 2.1 source
