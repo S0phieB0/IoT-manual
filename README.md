@@ -19,7 +19,7 @@ I looked at this website to find out how to do it: https://lastminuteengineers.c
 So you go to **Sketch > Inlcude Library > Manage Librarues**
 Search for '**ntpclient**' by Fabrice Weinberg and instal it.
 
-![ntpclient in library](libraryntpclient.jpg "ntpclient in library")
+<img width="217" alt="libraryntpclient" src="https://user-images.githubusercontent.com/90249238/198129553-7e77b66c-351d-4042-9b6a-36436857822d.png">
 
 
 ### 1.3 Add code
