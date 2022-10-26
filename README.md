@@ -155,14 +155,14 @@ First you have to costumize the Google Calendar events:
 <img width="300" alt="zapstep2" src="https://user-images.githubusercontent.com/90249238/198130380-6eb93695-21f9-48d3-bdf2-99afb97227a4.png">
 <img width="300" alt="zapstep2value" src="https://user-images.githubusercontent.com/90249238/198130434-4558762d-03dd-4c8a-95aa-8eb18217280d.png">
 The second part is connecting Zapier to Adafruit:
-- Under **Choose app** you have to select '**ADafruit IO**'
-- Under **Choose Action** Event select '**Create Feed Data**'
-- Under **Choose account** you have to log in with your Adafruit account.
-- Fill in the Feed you want to use
-- Under **Value** click on the add icon and select '**1. Event begins:**' ans '**1. Event Ends**'
-  🚩 Select them in the right order enn don't select the 'pretty' versions otherwise it might not work.
-- Click '**Test & Continue**' and check in your Adafruit if the test came through.
-- Click '**Turn on the Zap**' (in the top right corner)
+  - Under **Choose app** you have to select '**ADafruit IO**'
+  - Under **Choose Action** Event select '**Create Feed Data**'
+  - Under **Choose account** you have to log in with your Adafruit account.
+  - Fill in the Feed you want to use
+  - Under **Value** click on the add icon and select '**1. Event begins:**' ans '**1. Event Ends**'
+    🚩 Select them in the right order enn don't select the 'pretty' versions otherwise it might not work.
+  - Click '**Test & Continue**' and check in your Adafruit if the test came through.
+  - Click '**Turn on the Zap**' (in the top right corner)
 
 <img width="300" alt="adafruitxzap" src="https://user-images.githubusercontent.com/90249238/198130574-c9795a2b-9484-49c4-aa13-567b9250bb1e.png">
 
