@@ -148,7 +148,7 @@ First you have to costumize the Google Calendar events:
 - The trigger event is '**Event start**'
 - Choose the Google Calendar account that you want to use and the calendar that you want to use from your account.
 - Set up the trigger. Choose the amount of time you want to get alerted about an upcoming event.
-_- You can also add a Search term, then Zapier will only trigger events with a certain name. If you don't use this, all the events from that caledar will trigger Zapier._
+- _You can also add a Search term, then Zapier will only trigger events with a certain name. If you don't use this, all the events from that caledar will trigger Zapier._
 - Click on '**Test and continue**'. If all goes well you will see that it all worked and you can continue to the next part.
 
 <img width="300" alt="zapstep2" src="https://user-images.githubusercontent.com/90249238/198130380-6eb93695-21f9-48d3-bdf2-99afb97227a4.png">
@@ -164,7 +164,7 @@ _
 - Click '**Test & Continue**' and check in your Adafruit if the test came through.
 - Click '**Turn on the Zap**' (in the top right corner)
 
-- <img width="300" alt="adafruitxzap" src="https://user-images.githubusercontent.com/90249238/198130574-c9795a2b-9484-49c4-aa13-567b9250bb1e.png">
+<img width="300" alt="adafruitxzap" src="https://user-images.githubusercontent.com/90249238/198130574-c9795a2b-9484-49c4-aa13-567b9250bb1e.png">
 
 
 ## Step 3: Arduino IDE code
