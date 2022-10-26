@@ -25,7 +25,9 @@ Search for '**ntpclient**' by Fabrice Weinberg and instal it.
 ### 1.3 Add code
 Add the following code:
 
-_#include <NTPClient.h>
+
+
+#include <NTPClient.h>
 #include <ESP8266WiFi.h>
 #include <WiFiUdp.h>
 
@@ -66,7 +68,9 @@ void loop() {
   //Serial.println(timeClient.getFormattedTime());
 
   delay(1000);
-}_
+}
+
+
 
 ### 1.4 Add your info in the code
 You need to fill in a few things before the code can work:
