@@ -16,8 +16,8 @@ For my diffuser i need a light to automaticly turn off when it's time to sleep.
 I looked at this website to find out how to do it: https://lastminuteengineers.com/esp8266-ntp-server-date-time-tutorial/
 
 ### 1.2 Add ntpclient to library
-So you go to Sketch > Inlcude Library > Manage Librarues
-Search for 'ntpclient' by Fabrice Weinberg and instal it.
+So you go to **Sketch > Inlcude Library > Manage Librarues**
+Search for '**ntpclient**' by Fabrice Weinberg and instal it.
 
 ### 1.3 Add code
 Add the following code:
@@ -78,3 +78,20 @@ If everything worked you can now open your serial monitor (Button at the top rig
 
 ### 🚩 1.6 Mistake with the timezone 🚩
 The serial monitor said that it was one hour earlier than it actually was. I think it is because of daylight saving time. So instead of 'const long utcOffsetInSeconds = 3600;' it is 'const long utcOffsetInSeconds = 7200;' and then the time is correct.
+
+# step 2 - Linking your google calendar to ESP8266
+For my diffuser want to be able to link google calendar to it so that the diffuser goes on at the right time.
+
+### 2.1 source
+I looked at this website to find out how to do it: https://www.instructables.com/Google-Calendar-Events-to-ESP8266/
+
+### 2.2 Adafruit feed
+I already made an Adafruit account, if you don't have one you need to make one first.
+- Go to https://io.adafruit.com/
+- Go to **Feeds** and click on **New feed**
+- Give it a name so you can easily recognize it
+- Open the feed and see that its empty, you will later send data to it using Zapier.
+
+### 2.3 Make a Zap in Zappier
+...
+
