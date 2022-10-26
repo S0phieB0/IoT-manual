@@ -125,10 +125,10 @@ I looked at this website to find out how to do it: https://www.instructables.com
 
 ### 2.2 Adafruit feed
 I already made an Adafruit account, if you don't have one you need to make one first.
-- Go to https://io.adafruit.com/
-- Go to **Feeds** and click on **New feed**
-- Give it a name so you can easily recognize it
-- Open the feed and see that its empty, you will later send data to it using Zapier.
+ - Go to https://io.adafruit.com/
+ - Go to **Feeds** and click on **New feed**
+ - Give it a name so you can easily recognize it
+ - Open the feed and see that its empty, you will later send data to it using Zapier.
 
 <img width="300" alt="createnewfeed" src="https://user-images.githubusercontent.com/90249238/198129916-3053fb63-387e-42c1-92ca-a26bccbbfd78.png">
 <img width="300" alt="adafruitfeed" src="https://user-images.githubusercontent.com/90249238/198129963-2be3cb14-b123-41b1-a42a-df60cb6fff49.png">
@@ -144,12 +144,13 @@ I didn't have a Zappier account yet so I had to make one first. Just click on si
 <img width="300" alt="zapstep1" src="https://user-images.githubusercontent.com/90249238/198130247-15e80278-eb5d-453b-96c7-79bc74bfceff.png">
 <img width="300" alt="zapstep1trigger" src="https://user-images.githubusercontent.com/90249238/198130265-7c5fdd9d-c0d1-4590-b19d-f548350c3764.png">
 First you have to costumize the Google Calendar events:
-- Select **Google Calendar** for the app
-- The trigger event is '**Event start**'
-- Choose the Google Calendar account that you want to use and the calendar that you want to use from your account.
-- Set up the trigger. Choose the amount of time you want to get alerted about an upcoming event.
-- _You can also add a Search term, then Zapier will only trigger events with a certain name. If you don't use this, all the events from that caledar will trigger Zapier._
-- Click on '**Test and continue**'. If all goes well you will see that it all worked and you can continue to the next part.
+
+ - Select **Google Calendar** for the app
+ - The trigger event is '**Event start**'
+ - Choose the Google Calendar account that you want to use and the calendar that you want to use from your account.
+ - Set up the trigger. Choose the amount of time you want to get alerted about an upcoming event.
+  - You can also add a Search term, then Zapier will only trigger events with a certain name. If you don't use this, all the events from that caledar will trigger Zapier.
+ - Click on '**Test and continue**'. If all goes well you will see that it all worked and you can continue to the next part.
 
 <img width="300" alt="zapstep2" src="https://user-images.githubusercontent.com/90249238/198130380-6eb93695-21f9-48d3-bdf2-99afb97227a4.png">
 <img width="300" alt="zapstep2value" src="https://user-images.githubusercontent.com/90249238/198130434-4558762d-03dd-4c8a-95aa-8eb18217280d.png">
