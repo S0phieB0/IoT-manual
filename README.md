@@ -9,7 +9,7 @@ For Internet of Thinks I made a new idea for a diffuser. In this manual I'll try
 - ESP8266
 - LED lights
 
-## Step 1 - Getting the time from the internet
+## Step 1 - Getting the time from the internet in the Arduino IDE
 For my diffuser i need a light to automaticly turn off when it's time to sleep.
 
 ### 1.1 source
@@ -79,8 +79,42 @@ If everything worked you can now open your serial monitor (Button at the top rig
 ### 🚩 1.6 Mistake with the timezone 🚩
 The serial monitor said that it was one hour earlier than it actually was. I think it is because of daylight saving time. So instead of 'const long utcOffsetInSeconds = 3600;' it is 'const long utcOffsetInSeconds = 7200;' and then the time is correct.
 
-# step 2 - Linking your google calendar to ESP8266
-For my diffuser want to be able to link google calendar to it so that the diffuser goes on at the right time.
+### 1.7 The part I coundn't do
+I wanted the light to go on and off at certain times, but the problem is that I don't know how to do that exactly.
+I know that i had to write an If, If else code for it to work, but I don't get what exactly I could write for the code to understand at what time it needs to change.
+
+My best guess was to add:
+
+#define NUM_LEDS 60
+#define DATA_PIN D5
+#define CLOCK_PIN 13
+CRGB leds[NUM_LEDS];
+
+void setup(){
+    delay(100);
+    FastLED.addLeds<WS2811, DATA_PIN, RGB>(leds, NUM_LEDS);
+
+}
+
+void loop() {
+If (timeClient.getHours >= 22 && <=5)
+     for(int whiteLed = 0; whiteLed < NUM_LEDS; whiteLed = whiteLed + 1) {
+      leds[whiteLed] = CRGB::DarkRed;
+      FastLED.show();
+      delay(10);
+      leds[whiteLed] = CRGB::Black;
+ }
+ 
+  else (timeClient.getHours > 5)
+     for(int whiteLed = 0; whiteLed < NUM_LEDS; whiteLed = whiteLed + 1) {
+      leds[whiteLed] = CRGB::DarkRed;
+      FastLED.show();
+      delay(10);
+      leds[whiteLed] = CRGB::Black;
+ }
+
+## step 2 - Linking your google calendar to ESP8266
+For my diffuser want to be able to link Google Calendar to it so that the diffuser goes on at the right time.
 
 ### 2.1 source
 I looked at this website to find out how to do it: https://www.instructables.com/Google-Calendar-Events-to-ESP8266/
@@ -92,6 +126,38 @@ I already made an Adafruit account, if you don't have one you need to make one f
 - Give it a name so you can easily recognize it
 - Open the feed and see that its empty, you will later send data to it using Zapier.
 
-### 2.3 Make a Zap in Zappier
-...
+### 2.3 Make a Zap in Zappier 
+I didn't have a Zappier account yet so I had to make one first. Just click on sign in and fill out the needed information.
+
+- Go to http://zapier.com/
+- Click on '**Make a zap**'
+
+First you have to costumize the Google Calendar events:
+- Select **Google Calendar** for the app
+- The trigger event is '**Event start**'
+- Choose the Google Calendar account that you want to use and the calendar that you want to use from your account.
+- Set up the trigger. Choose the amount of time you want to get alerted about an upcoming event.
+_- You can also add a Search term, then Zapier will only trigger events with a certain name. If you don't use this, all the events from that caledar will trigger Zapier._
+- Click on '**Test and continue**'. If all goes well you will see that it all worked and you can continue to the next part.
+
+The second part is connecting Zapier to Adafruit:
+- Under **Choose app** you have to select '**ADafruit IO**'
+- Under **Choose Action** Event select '**Create Feed Data**'
+- Under **Choose account** you have to log in with your Adafruit account.
+- Fill in the Feed you want to use
+- Under **Value** click on the add icon and select '**1. Event begins:**' ans '**1. Event Ends**'
+  _🚩 Select them in the right order enn don't select the 'pretty' versions otherwise it might not work.
+_
+- Click '**Test & Continue**' and check in your Adafruit if the test came through.
+- Click '**Turn on the Zap**' (in the top right corner)
+
+## Step 3: Arduino IDE
+- Plug in your ESP8266 if you didn't already do that.
+- Go to https://github.com/SummerDanoe/ReadGoogleCalFeed and copy the code
+  - Don't forget to fill in your Adafruit username and key and your Wifi and padsword where it needs to be in the code.
+
+### 🚩 3.1 Error in the code 🚩
+When tried to verify the code it gave me an error: '**Compilation error: variable or field 'handleMessage' declared void**'
+Normaly you only have a void setup and void loop as far as I know, but in this code there was another loop called 'handleMessage' and that caused an error.
+
 
