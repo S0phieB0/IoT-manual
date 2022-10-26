@@ -12,17 +12,17 @@ For Internet of Thinks I made a new idea for a diffuser. In this manual I'll try
 ## Step 1 - Getting the time from the internet in the Arduino IDE
 For my diffuser i need a light to automaticly turn off when it's time to sleep.
 
-### 1.1 source
+### 🔴 1.1 source
 I looked at this website to find out how to do it: https://lastminuteengineers.com/esp8266-ntp-server-date-time-tutorial/
 
-### 1.2 Add ntpclient to library
+### 🟠 1.2 Add ntpclient to library
 So you go to **Sketch > Inlcude Library > Manage Librarues**
 Search for '**ntpclient**' by Fabrice Weinberg and instal it.
 
 <img width="217" alt="libraryntpclient" src="https://user-images.githubusercontent.com/90249238/198129553-7e77b66c-351d-4042-9b6a-36436857822d.png">
 
 
-### 1.3 Add code
+### 🟡 1.3 Add code
 Add the following code:
 
 
@@ -72,21 +72,21 @@ void loop() {
 
 
 
-### 1.4 Add your info in the code
+### 🟢 1.4 Add your info in the code
 You need to fill in a few things before the code can work:
 - Add your network and password
 - Adjust the UTC offset for your timezone(This link is where you can find yours: https://en.wikipedia.org/wiki/List_of_UTC_offsets)
   For most of Europe its UTC+01:00 --> 1 * 60 * 60 = 3600
   So then you fill in: 'const long utcOffsetInSeconds = 3600;'
   
-### 1.5 upload your code
+### 🔵 1.5 upload your code
 Verify the sketch and upload it. Don't forget to check if you linked the right board and port.
 If everything worked you can now open your serial monitor (Button at the top right) and you can see the day of the week and the time.
 
 ### 🚩 1.6 Mistake with the timezone 🚩
 The serial monitor said that it was one hour earlier than it actually was. I think it is because of daylight saving time. So instead of 'const long utcOffsetInSeconds = 3600;' it is 'const long utcOffsetInSeconds = 7200;' and then the time is correct.
 
-### 1.7 The part I coundn't do
+### 🟣 1.7 The part I coundn't do
 I wanted the light to go on and off at certain times, but the problem is that I don't know how to do that exactly.
 I know that i had to write an If, If else code for it to work, but I don't get what exactly I could write for the code to understand at what time it needs to change.
 
@@ -124,10 +124,10 @@ If (timeClient.getHours >= 22 && <=5)
 ## step 2 - Linking your google calendar to ESP8266
 For my diffuser want to be able to link Google Calendar to it so that the diffuser goes on at the right time.
 
-### 2.1 source
+### 🔴 2.1 source
 I looked at this website to find out how to do it: https://www.instructables.com/Google-Calendar-Events-to-ESP8266/
 
-### 2.2 Adafruit feed
+### 🟠 2.2 Adafruit feed
 I already made an Adafruit account, if you don't have one you need to make one first.
  - Go to https://io.adafruit.com/
  - Go to **Feeds** and click on **New feed**
@@ -136,7 +136,7 @@ I already made an Adafruit account, if you don't have one you need to make one f
 
 <img width="300" alt="createnewfeed" src="https://user-images.githubusercontent.com/90249238/198129916-3053fb63-387e-42c1-92ca-a26bccbbfd78.png"> <img width="300" alt="adafruitfeed" src="https://user-images.githubusercontent.com/90249238/198129963-2be3cb14-b123-41b1-a42a-df60cb6fff49.png">
 
-### 2.3 Make a Zap in Zappier 
+### 🟡 2.3 Make a Zap in Zappier 
 I didn't have a Zappier account yet so I had to make one first. Just click on sign in and fill out the needed information.
 
 <img width="500" alt="zaphome" src="https://user-images.githubusercontent.com/90249238/198130183-90b3beab-ea8e-4520-a1c1-147e0fa98838.png">
