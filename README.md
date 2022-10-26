@@ -130,19 +130,19 @@ I already made an Adafruit account, if you don't have one you need to make one f
 - Give it a name so you can easily recognize it
 - Open the feed and see that its empty, you will later send data to it using Zapier.
 
-<img width="922" alt="createnewfeed" src="https://user-images.githubusercontent.com/90249238/198129916-3053fb63-387e-42c1-92ca-a26bccbbfd78.png">
-<img width="919" alt="adafruitfeed" src="https://user-images.githubusercontent.com/90249238/198129963-2be3cb14-b123-41b1-a42a-df60cb6fff49.png">
+<img width="300" alt="createnewfeed" src="https://user-images.githubusercontent.com/90249238/198129916-3053fb63-387e-42c1-92ca-a26bccbbfd78.png">
+<img width="300" alt="adafruitfeed" src="https://user-images.githubusercontent.com/90249238/198129963-2be3cb14-b123-41b1-a42a-df60cb6fff49.png">
 
 
 ### 2.3 Make a Zap in Zappier 
 I didn't have a Zappier account yet so I had to make one first. Just click on sign in and fill out the needed information.
 
-<img width="1434" alt="zaphome" src="https://user-images.githubusercontent.com/90249238/198130183-90b3beab-ea8e-4520-a1c1-147e0fa98838.png">
+<img width="500" alt="zaphome" src="https://user-images.githubusercontent.com/90249238/198130183-90b3beab-ea8e-4520-a1c1-147e0fa98838.png">
 - Go to http://zapier.com/
 - Click on '**Make a zap**'
 
-<img width="936" alt="zapstep1" src="https://user-images.githubusercontent.com/90249238/198130247-15e80278-eb5d-453b-96c7-79bc74bfceff.png">
-<img width="885" alt="zapstep1trigger" src="https://user-images.githubusercontent.com/90249238/198130265-7c5fdd9d-c0d1-4590-b19d-f548350c3764.png">
+<img width="300" alt="zapstep1" src="https://user-images.githubusercontent.com/90249238/198130247-15e80278-eb5d-453b-96c7-79bc74bfceff.png">
+<img width="300" alt="zapstep1trigger" src="https://user-images.githubusercontent.com/90249238/198130265-7c5fdd9d-c0d1-4590-b19d-f548350c3764.png">
 First you have to costumize the Google Calendar events:
 - Select **Google Calendar** for the app
 - The trigger event is '**Event start**'
@@ -151,8 +151,8 @@ First you have to costumize the Google Calendar events:
 _- You can also add a Search term, then Zapier will only trigger events with a certain name. If you don't use this, all the events from that caledar will trigger Zapier._
 - Click on '**Test and continue**'. If all goes well you will see that it all worked and you can continue to the next part.
 
-<img width="931" alt="zapstep2" src="https://user-images.githubusercontent.com/90249238/198130380-6eb93695-21f9-48d3-bdf2-99afb97227a4.png">
-<img width="927" alt="zapstep2value" src="https://user-images.githubusercontent.com/90249238/198130434-4558762d-03dd-4c8a-95aa-8eb18217280d.png">
+<img width="300" alt="zapstep2" src="https://user-images.githubusercontent.com/90249238/198130380-6eb93695-21f9-48d3-bdf2-99afb97227a4.png">
+<img width="300" alt="zapstep2value" src="https://user-images.githubusercontent.com/90249238/198130434-4558762d-03dd-4c8a-95aa-8eb18217280d.png">
 The second part is connecting Zapier to Adafruit:
 - Under **Choose app** you have to select '**ADafruit IO**'
 - Under **Choose Action** Event select '**Create Feed Data**'
@@ -164,7 +164,7 @@ _
 - Click '**Test & Continue**' and check in your Adafruit if the test came through.
 - Click '**Turn on the Zap**' (in the top right corner)
 
-- <img width="1095" alt="adafruitxzap" src="https://user-images.githubusercontent.com/90249238/198130574-c9795a2b-9484-49c4-aa13-567b9250bb1e.png">
+- <img width="300" alt="adafruitxzap" src="https://user-images.githubusercontent.com/90249238/198130574-c9795a2b-9484-49c4-aa13-567b9250bb1e.png">
 
 
 ## Step 3: Arduino IDE code
@@ -175,7 +175,7 @@ _
 ### 🚩 3.1 Error in the code 🚩
 When tried to verify the code it gave me an error: '**Compilation error: variable or field 'handleMessage' declared void**'
 Normaly you only have a void setup and void loop as far as I know, but in this code there was another loop called 'handleMessage' and that caused an error.
-<img width="1438" alt="error1_googlec" src="https://user-images.githubusercontent.com/90249238/198130482-87ed09ad-21a2-48d7-8f93-6de78cccf28b.png">
-<img width="1438" alt="error2_googlec" src="https://user-images.githubusercontent.com/90249238/198130504-f33e8cc7-3aa7-46ef-adbb-8757819e5740.png">
+<img width="300" alt="error1_googlec" src="https://user-images.githubusercontent.com/90249238/198130482-87ed09ad-21a2-48d7-8f93-6de78cccf28b.png">
+<img width="300" alt="error2_googlec" src="https://user-images.githubusercontent.com/90249238/198130504-f33e8cc7-3aa7-46ef-adbb-8757819e5740.png">
 
 
